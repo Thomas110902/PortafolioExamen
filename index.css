@@ -7,10 +7,11 @@ main{
     margin-right: 50rem; 
 }
 .header{
-    border: 3px solid black;
+    border: 3px solid rgba(70, 70, 70, 0.452);
     border-radius: 30px;
+    background-color:rgba(0, 0, 0, 0.39) ;
     width: 35rem;
-    height: 35rem;
+    height: 38rem;
     position: relative;
 }
 .cuadro1 {
@@ -26,4 +27,181 @@ main{
     width:15rem ;
     height:15rem ;
     border-radius: 15px;
+}
+.cuadro2 {
+    margin-top: 12rem;
+    width: 35rem;
+}
+.cuadro2 .text1{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+}
+.cuadro2 .text2{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #dfdada;
+}
+.cuadro2 .text3{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 20px;
+    color: #dfdada;
+}
+.cuadro3 {
+    margin-top: 3rem;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.cuadro3 .logo1{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #3b3b3b83;
+}
+.cuadro3 .logo2{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #3b3b3b83;
+}
+.cuadro3 .logo3{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #3b3b3b83;
+}
+.cuadro3 .logo4{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #3b3b3b83;
+}
+.cuadro4{
+    margin-top: 4.5rem;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    color: #ffffff;
+}
+.cuadro4 a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.cuadro4 a {
+    position: relative; 
+    font-size: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease; 
+}
+
+.cuadro4 a:hover {
+    color: #ffffff; 
+}
+
+.cuadro4 a::after {
+    content: ""; 
+    position: absolute;
+    bottom: -3px; 
+    left: 0;
+    width: 0; 
+    height: 1px; 
+    background-color: #ffffff; 
+    transition: width 0.5s ease; 
+}
+.cuadro4 a::after {
+    left: 50%; /* Empieza desde el centro */
+    transform: translateX(-50%); /* Ajusta la posición */
+}
+.cuadro4 a:hover::after {
+    width: 100%; /* Expansión completa */
+}
+/* Estilos para móviles (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, rgb(190, 4, 4), rgb(1, 1, 61)); /* Cambia la dirección del gradiente */
+    }
+
+    main {
+        margin-top: 6rem; /* Reduce el margen superior */
+        margin-left: 1rem; /* Elimina el margen izquierdo grande */
+        margin-right: 1rem; /* Elimina el margen derecho grande */
+    }
+
+    .header {
+        width: 90%; /* Ocupa casi todo el ancho de la pantalla */
+        height: auto; /* Altura automática para adaptarse al contenido */
+        margin: 0 auto; /* Centra el contenedor */
+        padding-bottom: 2rem; /* Espacio inferior */
+    }
+
+    .cuadro1 {
+        width: 10rem; /* Reduce el tamaño de la imagen */
+        height: 10rem;
+        left: 50%; /* Centra horizontalmente */
+        transform: translateX(-50%); /* Ajusta la posición exacta */
+        top: -4rem; /* Ajusta la posición vertical */
+    }
+
+    .cuadro1 img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .cuadro2 {
+        margin-top: 8rem; /* Ajusta el margen superior */
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .cuadro2 .text1 {
+        font-size: 24px; /* Reduce el tamaño del texto */
+    }
+
+    .cuadro2 .text3 {
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+
+    .cuadro3 {
+        width: 100%; /* Ocupa todo el ancho */
+        gap: 1.5rem; /* Reduce el espacio entre logos */
+    }
+
+    .cuadro3 .logo1,
+    .cuadro3 .logo2,
+    .cuadro3 .logo3,
+    .cuadro3 .logo4 {
+        width: 3rem; /* Reduce el tamaño de los logos */
+        height: 3rem;
+    }
+
+    .cuadro4 {
+        width: 100%; /* Ocupa todo el ancho */
+        gap: 1.5rem; /* Reduce el espacio entre enlaces */
+        flex-wrap: wrap; /* Permite que los enlaces se ajusten en varias líneas */
+    }
+
+    .cuadro4 a {
+        font-size: 9px; /* Reduce el tamaño del texto */
+    }
 }
