@@ -1,5 +1,9 @@
 body{
-    background: linear-gradient(to left,rgb(190, 4, 4),rgb(1, 1, 61));
+    background: linear-gradient(to left, rgb(190, 4, 4), rgb(1, 1, 61));
+    background-attachment: fixed;
+    background-size: cover; 
+    min-height: 100vh; 
+
 }
 main{
     margin-top: 12rem;
@@ -131,37 +135,40 @@ main{
     transition: width 0.5s ease; 
 }
 .cuadro4 a::after {
-    left: 50%; /* Empieza desde el centro */
-    transform: translateX(-50%); /* Ajusta la posición */
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 .cuadro4 a:hover::after {
-    width: 100%; /* Expansión completa */
+    width: 100%; 
 }
-/* Estilos para móviles (pantallas menores a 768px) */
+
 @media (max-width: 768px) {
     body {
-        background: linear-gradient(to bottom, rgb(190, 4, 4), rgb(1, 1, 61)); /* Cambia la dirección del gradiente */
+        background: linear-gradient(to left, rgb(190, 4, 4), rgb(1, 1, 61));
+        background-attachment: fixed; 
+        background-size: cover; 
+        min-height: 100vh;
     }
 
     main {
-        margin-top: 6rem; /* Reduce el margen superior */
-        margin-left: 1rem; /* Elimina el margen izquierdo grande */
-        margin-right: 1rem; /* Elimina el margen derecho grande */
+        margin-top: 6rem;
+        margin-left: 1rem; 
+        margin-right: 1rem;
     }
 
     .header {
-        width: 90%; /* Ocupa casi todo el ancho de la pantalla */
-        height: auto; /* Altura automática para adaptarse al contenido */
-        margin: 0 auto; /* Centra el contenedor */
-        padding-bottom: 2rem; /* Espacio inferior */
+        width: 65%; 
+        height: auto; 
+        margin: 0 auto; 
+        padding-bottom: 2rem; 
     }
 
     .cuadro1 {
-        width: 10rem; /* Reduce el tamaño de la imagen */
+        width: 10rem; 
         height: 10rem;
-        left: 50%; /* Centra horizontalmente */
-        transform: translateX(-50%); /* Ajusta la posición exacta */
-        top: -4rem; /* Ajusta la posición vertical */
+        left: 50%; 
+        transform: translateX(-50%); 
+        top: -4rem; 
     }
 
     .cuadro1 img {
@@ -170,38 +177,38 @@ main{
     }
 
     .cuadro2 {
-        margin-top: 8rem; /* Ajusta el margen superior */
-        width: 100%; /* Ocupa todo el ancho */
+        margin-top: 8rem; 
+        width: 100%; 
     }
 
     .cuadro2 .text1 {
-        font-size: 24px; /* Reduce el tamaño del texto */
+        font-size: 24px; 
     }
 
     .cuadro2 .text3 {
-        font-size: 16px; /* Reduce el tamaño del texto */
+        font-size: 16px; 
     }
 
     .cuadro3 {
-        width: 100%; /* Ocupa todo el ancho */
-        gap: 1.5rem; /* Reduce el espacio entre logos */
+        width: 100%;
+        gap: 1.5rem; 
     }
 
     .cuadro3 .logo1,
     .cuadro3 .logo2,
     .cuadro3 .logo3,
     .cuadro3 .logo4 {
-        width: 3rem; /* Reduce el tamaño de los logos */
+        width: 3rem; 
         height: 3rem;
     }
 
     .cuadro4 {
-        width: 100%; /* Ocupa todo el ancho */
-        gap: 1.5rem; /* Reduce el espacio entre enlaces */
-        flex-wrap: wrap; /* Permite que los enlaces se ajusten en varias líneas */
+        width: 100%; 
+        gap: 1.5rem; 
+        flex-wrap: wrap; 
     }
 
     .cuadro4 a {
-        font-size: 9px; /* Reduce el tamaño del texto */
+        font-size: 9px;
     }
 }
