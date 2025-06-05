@@ -159,7 +159,8 @@ main{
     .header {
         width: 65%; 
         height: auto; 
-        margin: 0 auto; 
+        margin: 0 auto;
+        margin-top: 20rem; 
         padding-bottom: 2rem; 
     }
 
