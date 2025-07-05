@@ -5,12 +5,10 @@ body{
     min-height: 100vh; 
 
 }
-main{
-    margin-top: 12rem;
-    margin-left: 40%;
-    margin-right: 50rem; 
-}
 .header{
+    margin-top: 12rem;
+    margin-left: 35%;
+    margin-right: 50rem; 
     border: 3px solid rgba(70, 70, 70, 0.452);
     border-radius: 30px;
     background-color:rgba(0, 0, 0, 0.39) ;

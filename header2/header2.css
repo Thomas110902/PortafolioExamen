@@ -4,13 +4,12 @@ body{
     background-size: cover; 
     min-height: 100vh; 
 
-}
-main{
-    margin-top: 12rem;
-    margin-left: 40%;
-    margin-right: 50rem; 
-}
+}   
 .header{
+    margin-top: 12rem;
+    margin-left: 37.5%;
+    margin-right: 50rem;
+
     border: 3px solid rgba(70, 70, 70, 0.452);
     border-radius: 30px;
     background-color:rgba(0, 0, 0, 0.39) ;
@@ -85,4 +84,26 @@ main{
     align-items: center;
     color: #ffffff;
     gap: 0.5rem;
+}
+
+.cuadros{
+    margin-left: 12.5rem;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 150px;
+
+    gap: 5rem;
+}
+.C_1 {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: 150px;
+}
+.C_2{
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 500px;
+    height: 150px;
 }
