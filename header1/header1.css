@@ -6,7 +6,7 @@ body{
 
 }
 .header{
-    margin-top: 12rem;
+     margin-top: 12rem;
     margin-left: 37.5%;
     margin-right: 50rem; 
 
@@ -16,6 +16,7 @@ body{
     width: 35rem;
     height: 36rem;
     position: relative;
+
 }
 .cuadro1 {
     width:15rem ;
@@ -537,125 +538,6 @@ body{
     width: 30px;
     height: 30px;
 }
-@media (max-width: 600px) {
-  body {
-    background: linear-gradient(to top, rgb(190, 4, 4), rgb(1, 1, 61));
-    background-size: cover;
-  }
 
-  .header {
-    margin: 2rem auto;
-    width: 90%;
-    height: auto;
-    padding: 1rem;
-  }
 
-  .cuadro1 {
-    position: static;
-    width: 8rem;
-    height: 8rem;
-    margin: 0 auto;
-  }
-
-  .cuadro1 img {
-    width: 8rem;
-    height: 8rem;
-  }
-
-  .cuadro2 {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .cuadro2 .text1 {
-    font-size: 24px;
-  }
-
-  .cuadro2 .text2,
-  .cuadro2 .text3 {
-    font-size: 12px;
-  }
-
-  .text_info {
-    margin: 1rem 1rem 0 1rem;
-    font-size: 12px;
-  }
-
-  .cuadro4 {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    margin: 1.5rem;
-  }
-
-  .cuadros,
-  .cuadros_2,
-  .cuadros_3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
-    margin: 1rem auto;
-    padding: 0;
-  }
-
-  .C_1, .C_2, .C_3, .C_4, .C_5, .C_6, .C_7 {
-    width: 90%;
-    height: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .espacio_1, .espacio_3, .espacio_5, .espacio_7,
-  .espacio_9, .espacio_11, .espacio_13 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    margin-left: 1rem;
-  }
-
-  .espacio_2, .espacio_4, .espacio_6, .espacio_8,
-  .espacio_10, .espacio_12, .espacio_14 {
-    justify-content: flex-end;
-    margin-right: 1rem;
-  }
-
-  .espacio_5_1 {
-    width: 100px;
-    height: 25px;
-    font-size: 11px;
-  }
-
-  .span1, .span3, .span5, .span7, .span9, .span11, .span13 {
-    font-size: 14px;
-  }
-
-  .span2, .span4, .span6, .span8, .span10, .span12, .span14 {
-    font-size: 10px;
-  }
-
-  .espacio_1 img,
-  .espacio_3 img,
-  .espacio_5 img,
-  .espacio_7 img,
-  .espacio_9 img,
-  .espacio_11 img,
-  .espacio_13 img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .espacio_2 img,
-  .espacio_4 img,
-  .espacio_6 img,
-  .espacio_8 img,
-  .espacio_10 img,
-  .espacio_12 img,
-  .espacio_14 img {
-    width: 25px;
-    height: 25px;
-  }
-}
 
