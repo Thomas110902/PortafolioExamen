@@ -1,0 +1,87 @@
+body{
+    background: linear-gradient(to left, rgb(190, 4, 4), rgb(1, 1, 61));
+    background-attachment: fixed;
+    background-size: cover; 
+    min-height: 100vh; 
+
+}
+.header{
+    margin-top: 12rem;
+    margin-left: 37.5%;
+    margin-right: 50rem; 
+
+    border: 3px solid rgba(70, 70, 70, 0.452);
+    border-radius: 30px;
+    background-color:rgba(0, 0, 0, 0.39) ;
+    width: 35rem;
+    height: 36rem;
+    position: relative;
+}
+.cuadro1 {
+    width:15rem ;
+    height:15rem ;
+    border-radius: 15px;
+    position: absolute;
+    left: 27.5%;
+    top: -5rem;
+
+}
+.cuadro1 img{
+    width:15rem ;
+    height:15rem ;
+    border-radius: 15px;
+}
+.cuadro2 {
+    margin-top: 12rem;
+    width: 35rem;
+}
+.cuadro2 .text1{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+}
+.cuadro2 .text2{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #dfdada;
+}
+.cuadro2 .text3{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 20px;
+    color: #dfdada;
+}
+.text_info{
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+    color: #ffffff;
+    font-size: 11.8px;
+}
+.text_info .fechacumple{
+    padding-bottom:0.2rem ;
+}
+.text_info .Product{
+    padding-bottom:0.2rem ;
+}
+.cuadro4{
+    margin-left: 1.5rem;
+    margin-top: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+.cuadro4 .ubicacion{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    gap: 0.5rem;
+}
+.cuadro4 .cumpleaños{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    gap: 0.5rem;
+}
