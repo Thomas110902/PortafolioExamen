@@ -169,3 +169,95 @@ ul{
     margin-left: 40%;
     margin-right: 45rem;
 }
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(to left, rgb(190, 4, 4), rgb(1, 1, 61));
+        padding: 10px;
+    }
+
+    .header {
+        margin: 2rem auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .cuadro1 {
+        position: static;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: -4rem;
+    }
+
+    .cuadro1 img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .cuadro2 {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .cuadro2 .text1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .cuadro2 .text2 {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .cuadro2 .text3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .text_info {
+        margin: 1rem auto;
+        font-size: 11px;
+        width: 90%;
+    }
+
+    .cuadro4 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .texto_1 {
+        margin: 2rem auto;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .cuadro5 img {
+        width: 100%;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .descripcion {
+        width: 90%;
+        height: auto;
+        font-size: 14px;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    .Resposit,
+    .Git,
+    .staks,
+    ul {
+        margin: 1rem auto;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    ul {
+        margin-left: 1rem;
+    }
+}
