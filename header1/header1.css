@@ -64,6 +64,33 @@ body{
 .text_info .fechacumple{
     padding-bottom:0.2rem ;
 }
+.fechacumple{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.fechacumple img{
+    width: 15px;
+    height: 15px;
+}
+.Product{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.Product img{
+    width: 15px;
+    height: 15px;
+}
+.Dev img{
+    width: 15px;
+    height: 15px;
+}
+.Dev{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 .text_info .Product{
     padding-bottom:0.2rem ;
 }
@@ -539,7 +566,6 @@ body{
 .espacio_14 img{
     margin-top: 10px;
     margin-right: 20px;
-
     width: 40px;
     height: 40px;
 }
