@@ -1,210 +1,158 @@
-body{
+/* ===================== BODY ===================== */
+body {
     background: linear-gradient(to left, rgb(190, 4, 4), rgb(1, 1, 61));
     background-attachment: fixed;
     background-size: cover; 
     min-height: 100vh; 
-
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-.header{
-    margin-top: 12rem;
-    margin-left: 35%;
-    margin-right: 50rem; 
-    border: 3px solid rgba(70, 70, 70, 0.452);
+
+/* ===================== HEADER ===================== */
+.header {
+    margin: 12rem auto 0 auto;  /* centrado horizontal */
+    border: 3px solid rgba(70, 70, 70, 0.45);
     border-radius: 30px;
-    background-color:rgba(0, 0, 0, 0.39) ;
-    width: 35rem;
-    height: 38rem;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 90%;           /* ancho flexible */
+    max-width: 35rem;     /* no crece demasiado */
+    height: auto;
+    padding-bottom: 2rem;
     position: relative;
 }
+
+/* ===================== CUADRO 1 ===================== */
 .cuadro1 {
-    width:15rem ;
-    height:15rem ;
+    width: 40%;          /* relativo al header */
+    max-width: 15rem;
+    aspect-ratio: 1/1;
     border-radius: 15px;
     position: absolute;
-    left: 27.5%;
-    top: -5rem;
+    top: -7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-}
-.cuadro1 img{
-    width:15rem ;
-    height:15rem ;
+.cuadro1 img {
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
+    object-fit: cover;
 }
+
+/* ===================== CUADRO 2 ===================== */
 .cuadro2 {
-    margin-top: 12rem;
-    width: 35rem;
+    margin-top: 15rem;
+    width: 90%;
+    max-width: 35rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-.cuadro2 .text1{
-    display: flex;
-    justify-content: center;
+
+.cuadro2 .text1 {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 3rem;
     color: #ffffff;
 }
-.cuadro2 .text2{
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
+
+.cuadro2 .text2 {
+    font-size:1.5rem;
     color: #dfdada;
 }
-.cuadro2 .text3{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    font-size: 20px;
+
+.cuadro2 .text3 {
+    font-size: 2rem;
     color: #dfdada;
+    margin-top: 0.5rem;
 }
+
+/* ===================== CUADRO 3 (LOGOS) ===================== */
 .cuadro3 {
     margin-top: 3rem;
-    width: 35rem;
+    width: 90%;
+    max-width: 35rem;
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
-.cuadro3 .logo1{
+
+.cuadro3 div {
+    width: 4rem;
+    height: 4rem;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: #3b3b3b83;
+    background-color: rgba(59, 59, 59, 0.52);
 }
-.cuadro3 .logo2{
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: #3b3b3b83;
-}
-.cuadro3 .logo3{
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: #3b3b3b83;
-}
-.cuadro3 .logo4{
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: #3b3b3b83;
-}
-.cuadro4{
+
+/* ===================== CUADRO 4 (ENLACES) ===================== */
+.cuadro4 {
     margin-top: 4.5rem;
-    width: 35rem;
+    width: 90%;
+    max-width: 35rem;
     display: flex;
     justify-content: center;
-    gap: 3.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
     color: #ffffff;
 }
-.cuadro4 a {
-    font-size: 10px;
-    text-decoration: none;
-    color: #ffffff;
-}
+
 .cuadro4 a {
     position: relative; 
     font-size: 10px;
     text-decoration: none;
     color: #ffffff;
-    transition: all 0.3s ease; 
-}
-
-.cuadro4 a:hover {
-    color: #ffffff; 
+    transition: all 0.3s ease;
 }
 
 .cuadro4 a::after {
     content: ""; 
     position: absolute;
     bottom: -3px; 
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 0; 
     height: 1px; 
     background-color: #ffffff; 
-    transition: width 0.5s ease; 
+    transition: width 0.5s ease;
 }
-.cuadro4 a::after {
-    left: 50%; 
-    transform: translateX(-50%); 
-}
+
 .cuadro4 a:hover::after {
     width: 100%; 
 }
 
+/* ===================== MEDIA QUERY PARA MÓVILES ===================== */
 @media (max-width: 768px) {
-    body {
-        background: linear-gradient(to left, rgb(190, 4, 4), rgb(1, 1, 61));
-        background-attachment: fixed; 
-        background-size: cover; 
-        min-height: 100vh;
-    }
-
-    main {
-        margin-top: 6rem;
-        margin-left: 1rem; 
-        margin-right: 1rem;
-    }
-
     .header {
-        width: 72%; 
-        height: auto; 
-        margin: 0 auto;
-        margin-top: 20rem; 
-        padding-bottom: 2rem; 
+        width: 95%;
+        margin-top: 6rem;
+        padding-bottom: 1.5rem;
     }
 
     .cuadro1 {
-        width: 10rem; 
-        height: 10rem;
-        left: 50%; 
-        transform: translateX(-50%); 
-        top: -4rem; 
-    }
-
-    .cuadro1 img {
-        width: 10rem;
-        height: 10rem;
-    }
-
-    .cuadro2 {
-        margin-top: 8rem; 
-        width: 100%; 
+        width: 35%;
+        max-width: 10rem;
+        top: -5%;
     }
 
     .cuadro2 .text1 {
-        font-size: 24px; 
+        font-size: 1.5rem;
     }
 
     .cuadro2 .text3 {
-        font-size: 16px; 
+        font-size: 1rem;
     }
 
-    .cuadro3 {
-        width: 100%;
-        gap: 1.5rem; 
-    }
-
-    .cuadro3 .logo1,
-    .cuadro3 .logo2,
-    .cuadro3 .logo3,
-    .cuadro3 .logo4 {
-        width: 3rem; 
+    .cuadro3 div {
+        width: 3rem;
         height: 3rem;
     }
 
     .cuadro4 {
-        width: 100%; 
-        gap: 1.5rem; 
-        flex-wrap: wrap; 
+        gap: 1rem;
     }
 
     .cuadro4 a {
